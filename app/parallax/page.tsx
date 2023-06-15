@@ -49,7 +49,7 @@ const ParallaxApp = () => {
                </div>
             </ParallaxLayer>
             <ParallaxLayer offset={0}>
-            <div className=' p-96' style={{backgroundColor:'black' , opacity: 0.15}}></div>
+            <div className=' p-96' style={{backgroundColor:'black' , opacity: 0.15 , height: '100%'}}></div>
             </ParallaxLayer>
             <ParallaxLayer offset={0} speed={-0.3} className='Herotext'>
                 <TrailText/>
