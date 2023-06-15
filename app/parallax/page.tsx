@@ -11,12 +11,13 @@ import third from './image/3.png'
 import moon from './image/moon.png'
 import snow from './image/snow.png'
 import BouncingArrow from './arrow';
+import NavBar from './navbar';
 
 const ParallaxApp = () => {
     
     return (
         <div className=''>
-
+        
         <Parallax pages={2}>
             <ParallaxLayer offset={0}>
             <div className=' p-96' style={{backgroundColor:'#232428'}}></div>
@@ -48,7 +49,7 @@ const ParallaxApp = () => {
                </div>
             </ParallaxLayer>
             <ParallaxLayer offset={0}>
-            <div className=' p-96' style={{backgroundColor:'black' , opacity: 0.25}}></div>
+            <div className=' p-96' style={{backgroundColor:'black' , opacity: 0.15}}></div>
             </ParallaxLayer>
             <ParallaxLayer offset={0} speed={-0.3} className='Herotext'>
                 <TrailText/>
@@ -66,6 +67,7 @@ const ParallaxApp = () => {
             <div className=' p-96' style={{backgroundColor:'#ecd7d0'}}></div>
             </ParallaxLayer>
         </Parallax>
+        <NavBar/>
         </div>
       )
 };
